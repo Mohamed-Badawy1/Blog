@@ -28,3 +28,7 @@ View lists of all authors and departments.
 
 -SQL Server: The relational database system for storing application data.
 
+## How to Run
+ Clone the repository:
+ ```bash
+ https://github.com/Mohamed-Badawy1/Blog-project-MVC.git
