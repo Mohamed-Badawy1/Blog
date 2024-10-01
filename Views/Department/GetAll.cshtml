@@ -1,0 +1,65 @@
+@model IEnumerable<Blog.Models.Department>
+
+@{
+    ViewData["Title"] = "Departments List";
+}
+
+<h2 class="text-center my-4">Departments Directory</h2>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table table-bordered table-hover shadow-sm">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Department Name</th>
+                        <th scope="col">Create Date</th>
+                        <th scope="col">Authors</th>
+                        <th scope="col" class="text-center">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var department in Model)
+                    {
+                        <tr>
+                            <td>@department.ID</td>
+                            <td>@department.DepName</td>
+                            <td>@department.CreateDate</td>
+                            <td>
+                                @if (department.Authors != null && department.Authors.Any())
+                                {
+                                    <ul class="list-unstyled mb-0">
+                                        @foreach (var author in department.Authors)
+                                        {
+                                            if (author != null)
+                                            {
+                                                <li><i class="fas fa-user text-secondary mr-1"></i>@author.Name</li>
+                                            }
+                                        }
+                                    </ul>
+                                }
+                                else
+                                {
+                                    <span class="text-muted">No authors</span>
+                                }
+                            </td>
+                            <td class="text-center">
+                                <a asp-action="Edit" asp-route-id="@department.ID" class="btn btn-sm btn-warning mx-1">Edit</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <a asp-action="Create" class="btn btn-success">Add New Department</a>
+        </div>
+        <div class="col-md-6 text-right">
+            <a asp-controller="Home" asp-action="Index" class="btn btn-secondary">Back to Home</a>
+        </div>
+    </div>
+</div>
