@@ -1,5 +1,6 @@
 # Blog MVC Application
 📄 Overview
+
 This is a simple ASP.NET Core MVC Blog Application built to demonstrate CRUD operations for managing posts, authors, and departments. The project is structured using the Model-View-Controller (MVC) pattern, providing a clean separation of concerns and a well-organized codebase.
 
 The application allows users to:
