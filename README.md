@@ -12,19 +12,19 @@ Manage authors and assign them to different departments.
 View lists of all authors and departments.
 
 ## Features
-Post Management: Create, edit, and delete posts, complete with descriptions, post type, and images.
+-Post Management: Create, edit, and delete posts, complete with descriptions, post type, and images.
 
-Author and Department Management: Link authors to departments, and display author information alongside each post.
+-Author and Department Management: Link authors to departments, and display author information alongside each post.
 
-User-friendly Interface: Includes Bootstrap styling for responsive design and modern UI.
+-User-friendly Interface: Includes Bootstrap styling for responsive design and modern UI.
 ## 🛠️ Tech Stack
-.NET Core: The backend framework used to build the application.
+-.NET Core: The backend framework used to build the application.
 
-ASP.NET Core MVC: The web framework used for building dynamic views and handling requests.
+-ASP.NET Core MVC: The web framework used for building dynamic views and handling requests.
 
-Entity Framework Core: ORM used for database access and management.
+-Entity Framework Core: ORM used for database access and management.
 
-Bootstrap: CSS framework for styling the frontend.
+-Bootstrap: CSS framework for styling the frontend.
 
-SQL Server: The relational database system for storing application data.
+-SQL Server: The relational database system for storing application data.
 
